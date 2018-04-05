@@ -123,13 +123,13 @@ bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace 10
 
 # Pulse Audio controls
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl -- set-sink-volume 0 +5% #increase sound volume
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl -- set-sink-volume 0 -5% #decrease sound volume
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
+bindsym F12 exec --no-startup-id pactl -- set-sink-volume 0 +5% #increase sound volume
+bindsym F11 exec --no-startup-id pactl -- set-sink-volume 0 -5% #decrease sound volume
+bindsym F10 exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
 
 # Sreen brightness controls
-bindsym XF86MonBrightnessUp exec xbacklight -inc 5 # increase screen brightness
-bindsym XF86MonBrightnessDown exec xbacklight -dec 5 # decrease screen brightness
+bindsym F6 exec brightness.sh + DSI1 # increase screen brightness
+bindsym F5 exec brightness.sh - DSI1 # decrease screen brightness
 
 
 # reload the configuration file
